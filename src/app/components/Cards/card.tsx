@@ -1,10 +1,20 @@
 import Image from "next/image";
 import styles from "./card.module.css";
 
-export default function Cards({ allPhones }) {
+interface Phone {
+  id: string;
+  img: string;
+  name: string;
+  brand: string;
+  price: number;
+  memory: number;
+  color: string;
+}
+
+export default function Cards({ allPhones }: { allPhones: Phone[] }) {
   return (
     <>
-      {allPhones.map((phone) => (
+      {allPhones.map((phone: Phone) => (
         <div key={phone.id} className={styles.card}>
           <Image
             className={styles.cardImage}
