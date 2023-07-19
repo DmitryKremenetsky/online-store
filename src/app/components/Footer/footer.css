@@ -2,7 +2,13 @@
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px;
+}
+
+.privacy {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
 }

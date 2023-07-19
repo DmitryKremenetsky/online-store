@@ -3,11 +3,9 @@ import "./footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div>
-        <p className="">Название сайта</p>
-      </div>
-      <div>
-        <p className="">© 2022 Название сайта. Все права защищены.</p>
+      <div className="privacy">
+        <p className="">© 2023 Online Store. All rights reserved.</p>
+        <p className="">Online Store</p>
       </div>
     </footer>
   );
