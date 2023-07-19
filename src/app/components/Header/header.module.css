@@ -3,15 +3,11 @@
   height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
-.search-icon i {
-  font-size: 30px;
-  fill: white;
-}
-
-.cart-container i {
+.cartIcon i {
   font-size: 30px;
   fill: white;
 }
