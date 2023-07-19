@@ -1,16 +1,17 @@
 import Image from "next/image";
-import "./header.css";
+import styles from "./header.module.css";
+import Search from "../Search/search";
+import shopIcon from "../../../assets/store-logo.png";
 
 export default function Header() {
   return (
-    <div className="header">
-      <div className="search-container">
-        <div className="search-icon">
-          <i className="bi bi-search"></i>
-        </div>
+    <div className={styles.header}>
+      <Search />
+      <div className={styles.logoContainer}>
+        <Image className={styles.logoImage} src={shopIcon} alt="logo image" />
       </div>
-      <div className="cart-container">
-        <div className="cart-icon">
+      <div className={styles.cartContainer}>
+        <div className={styles.cartIcon}>
           <i className="bi bi-basket3"></i>
         </div>
       </div>
