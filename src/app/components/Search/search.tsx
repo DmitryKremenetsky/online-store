@@ -15,17 +15,29 @@ export default function Search() {
     setSearchQuery(event.target.value);
   };
 
+  const handleSearchClose = (): void => {
+    setSearchOpen(false);
+    setSearchQuery("");
+  };
+
   return (
     <>
       <div className={styles.searchContainer}>
         {isSearchOpen ? (
-          <input
-            type="text"
-            className={styles.searchInput}
-            placeholder="let's search"
-            value={searchQuery}
-            onChange={handelInputChange}
-          />
+          <>
+            <input
+              type="text"
+              className={styles.searchInput}
+              placeholder="let's search"
+              value={searchQuery}
+              onChange={handelInputChange}
+            />
+            <div className={styles.closeContainer} onClick={handleSearchClose}>
+              <button className={styles.closeBtn}>
+                <i className="bi bi-x-lg"></i>
+              </button>
+            </div>
+          </>
         ) : (
           <div className={styles.searchIcon} onClick={handelSearchIconClick}>
             <i className="bi bi-search"></i>
