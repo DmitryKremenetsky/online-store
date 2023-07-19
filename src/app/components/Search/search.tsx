@@ -32,7 +32,7 @@ export default function Search() {
               value={searchQuery}
               onChange={handelInputChange}
             />
-            <div className={styles.closeContainer} onClick={handleSearchClose}>
+            <div className={styles.closeBtn} onClick={handleSearchClose}>
               <button className={styles.closeBtn}>
                 <i className="bi bi-x-lg"></i>
               </button>
