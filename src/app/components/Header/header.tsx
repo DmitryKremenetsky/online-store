@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./header.module.css";
 import Search from "../Search/search";
-import shopIcon from "../../../assets/store-logo.png";
+import shopIcon from "../../../../public/assets/store-logo.png";
 
 export default function Header() {
   return (
