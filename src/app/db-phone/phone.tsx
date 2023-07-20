@@ -10,7 +10,7 @@ const allPhones = [
   },
   {
     id: "2",
-    img: "/assets/s21.jpg",
+    img: "/assets/s21-samsung.jpg",
     name: "Samsung Galaxy S21",
     brand: "Samsung",
     price: 750,
@@ -19,7 +19,7 @@ const allPhones = [
   },
   {
     id: "3",
-    img: "/assets/s21.jpg",
+    img: "/assets/pixel5.jpg",
     name: "Pixel 5",
     brand: "Google",
     price: 600,
@@ -28,7 +28,7 @@ const allPhones = [
   },
   {
     id: "4",
-    img: "/assets/s21.jpg",
+    img: "/assets/xiaomi11lite.jpg",
     name: "Xiaomi 11 Lite",
     brand: "Xiaomi",
     price: 400,
@@ -37,7 +37,7 @@ const allPhones = [
   },
   {
     id: "5",
-    img: "/assets/s21.jpg",
+    img: "/assets/oneplus9.jpg",
     name: "OnePlus 9",
     brand: "OnePlus",
     price: 850,
@@ -46,7 +46,7 @@ const allPhones = [
   },
   {
     id: "6",
-    img: "/assets/s21.jpg",
+    img: "/assets/p40.jpg",
     name: "Huawei P40",
     brand: "Huawei",
     price: 700,
@@ -55,7 +55,7 @@ const allPhones = [
   },
   {
     id: "7",
-    img: "/assets/s21.jpg",
+    img: "/assets/xperia5.jpg",
     name: "Sony Xperia 5 III",
     brand: "Sony",
     price: 900,
@@ -64,7 +64,7 @@ const allPhones = [
   },
   {
     id: "8",
-    img: "/assets/s21.jpg",
+    img: "/assets/pixel5.jpg",
     name: "Pixel 5",
     brand: "Google",
     price: 600,
@@ -73,7 +73,7 @@ const allPhones = [
   },
   {
     id: "9",
-    img: "/assets/s21.jpg",
+    img: "/assets/nokia7_2.png",
     name: "Nokia 7.2",
     brand: "Nokia",
     price: 400,
@@ -82,7 +82,7 @@ const allPhones = [
   },
   {
     id: "10",
-    img: "/assets/s21.jpg",
+    img: "/assets/pixel6.jpg",
     name: "Google Pixel 6",
     brand: "Google",
     price: 600,
@@ -91,20 +91,20 @@ const allPhones = [
   },
   {
     id: "11",
-    img: "/assets/s21.jpg",
-    name: "Google Pixel 6",
-    brand: "Google",
-    price: 600,
+    img: "/assets/iphone12.jpg",
+    name: "iPhone 12",
+    brand: "Apple",
+    price: 800,
     memory: 128,
     color: "black",
   },
   {
     id: "12",
-    img: "/assets/s21.jpg",
+    img: "/assets/pixel6.jpg",
     name: "Google Pixel 6",
     brand: "Google",
     price: 600,
-    memory: 128,
+    memory: 256,
     color: "black",
   },
 ];
