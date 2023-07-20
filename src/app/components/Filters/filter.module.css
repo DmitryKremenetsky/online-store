@@ -5,31 +5,105 @@
 }
 
 .sidebar h3 {
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-.memoryContainer {
-  margin-bottom: 16px;
+.brand {
+  margin-bottom: 10px;
 }
 
-.colorContainer {
-  margin-bottom: 8px;
+.brandList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.priceContainer input[type="range"] {
-  width: 100%;
+.brandList li {
+  margin: 6px;
+  cursor: pointer;
 }
 
-.memoryContainer label {
-  margin-right: 8px;
+.brandList li:hover {
+  color: #000000;
+  font-weight: bold;
 }
 
-.colorContainer .colorOption {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+.price h4 {
+  margin-bottom: 6px;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.price p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price span {
+  margin-left: 4px;
   margin-right: 4px;
-  display: inline-block;
+}
+
+.priceList {
+  display: flex;
+  align-items: center;
+}
+
+.priceList input {
+  width: 100%;
+  padding: 10px;
+}
+
+.memory {
+  margin-bottom: 10px;
+}
+
+.memory h4 {
+  margin-bottom: 6px;
+}
+
+.memoryList {
+  display: flex;
+  align-items: center;
+}
+
+.memoryList input {
+  margin-right: 4px;
+}
+
+.memoryList label {
+  margin-right: 4px;
+}
+
+.color {
+  margin-bottom: 10px;
+}
+
+.color h4 {
+  margin-bottom: 6px;
+}
+
+.colorList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.color button {
+  padding: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.selectedColor {
+  border: 2px solid #000;
 }
