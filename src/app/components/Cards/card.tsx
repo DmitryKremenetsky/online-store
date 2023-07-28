@@ -1,6 +1,10 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./card.module.css";
-import Filters from "../Filters/filter";
+import Cart from "../Cart/cart";
+
 interface Phone {
   id: string;
   img: string;
@@ -11,7 +15,12 @@ interface Phone {
   color: string;
 }
 
-export default function Cards({ allPhones }: { allPhones: Phone[] }) {
+interface CardProps {
+  allPhones: Phone[];
+  handleAddToCart: () => void;
+}
+
+export default function Cards({ allPhones, handleAddToCart }: CardProps) {
   return (
     <>
       {allPhones.map((phone: Phone) => (
@@ -28,7 +37,7 @@ export default function Cards({ allPhones }: { allPhones: Phone[] }) {
           <p>Price: ${phone.price}</p>
           <p>Memory: {phone.memory}GB</p>
           <p>Color: {phone.color}</p>
-          <button>Buy this phone</button>
+          <button onClick={handleAddToCart}>Buy this phone</button>
         </div>
       ))}
     </>
